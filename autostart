@@ -1,0 +1,13 @@
+export PATH=$PATH:~/bin/
+nitrogen --restore &
+volumeicon &
+#nm-applet &
+compton --config ~/.config/compton.conf -b &
+tint2 &
+plank &
+conky -c ~/.config/conky.conf &
+#/usr/lib/lxpolkit/lxpolkit &
+#cairo-dock &
+guake &
+
+setlayout 0 2 2 0
