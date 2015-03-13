@@ -170,6 +170,16 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
+    <keybind key="XF86MonBrightnessUp">
+       <action name="Execute">
+        <command>xbacklight +10</command>
+      </action>
+     </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute">
+        <command>xbacklight -10</command>
+      </action>
+    </keybind>
     <keybind key="C-A-Left">
       <action name="DesktopLeft">
         <wrap>no</wrap>
@@ -338,7 +348,7 @@
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>lxterminal</command>
+        <command>gnome-terminal</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>lxterminal</name>
@@ -401,6 +411,9 @@
     <keybind key="W-a">
       <action name="ToggleMaximizeFull"/>
     </keybind>
+    <keybind key="A-F10">
+      <action name="ToggleMaximizeFull"/>
+    </keybind>
     <keybind key="W-Right">
       <action name="MoveToEdgeEast"/>
     </keybind>
@@ -454,9 +467,9 @@
         <command>amixer set Master 5%+ unmute</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioLowerVolume">
+    <keybind key="C-A-l">
       <action name="Execute">
-        <command>amixer set Master 5%- unmute</command>
+        <command>sflock -c oiydp1mowsiac7e</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
@@ -467,6 +480,11 @@
     <keybind key="XF86ScreenSaver">
       <action name="Execute">
         <command>dm-tool lock</command>
+      </action>
+    </keybind>
+    <keybind key="XF86Sleep">
+      <action name="Execute">
+        <command>sudo systemctl suspend</command>
       </action>
     </keybind>
     <keybind key="XF86Sleep">
